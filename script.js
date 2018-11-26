@@ -1,24 +1,9 @@
 var Cartes = ["1up", "1up", "mushroom", "mushroom", "blueshell", "blueshell", "coin", "coin", "star", "star"];
-var carte1 = "";
-var carte2 = "";
+var MotifsCartes=[1,1,2,2,3,3,4,4,5,5];
+var EtatCartes = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+var DuoR=[];
+var bonnePaire=0;
 var temp;
-
-var afficheCartes = function () {
-    for (let i = 0; i < Cartes.length; i++) {
-        var cartes = document.createElement('img');
-        cartes.src = `images/${Cartes[i]}.png`;
-        cartes.name = Cartes;
-        cartes.id = `carte${i}`;
-        cartes.style.width = `${150}px`;
-        cartes.style.height = `${150}px`;
-        cartes.style.marginLeft = `${8}%`;
-        cartes.style.marginTop = `${3}%`;
-        document.getElementById('plateau').appendChild(cartes);
-        cartes.innerHTML = "t";
-
-
-    }
-};
 
 
 var melange = function () {
@@ -30,14 +15,15 @@ var melange = function () {
         Cartes[i] = Cartes[alea];
         Cartes[alea] = temp;
     }
-}
-
+};
 
 melange();
-afficheCartes();
 
 for (let i = 0; i < Cartes.length; i++) {
     document.getElementById('carte' + i).addEventListener("click", function () {
+        console.log(Cartes[i]);
+        document.getElementById('carte'+i).src = `images/${Cartes[i]}.png`;
+
 
     })
 }

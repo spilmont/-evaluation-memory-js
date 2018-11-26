@@ -1,4 +1,9 @@
-h1{
+h1 {
     text-align: center;
 
+}
+
+img {
+    cursor: url(images/019-SMMCursor.png), pointer;
+    width: 150px;
 }
