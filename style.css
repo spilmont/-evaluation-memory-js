@@ -1,9 +1,35 @@
 h1 {
     text-align: center;
 
+
+}
+h2 {
+    text-align: center;
 }
 
-img {
-
+#plateau img {
+    cursor: url(images/019-SMMCursor.png), pointer;
     width: 150px;
+    height: 150px;
+    margin-left: 8%;
+    margin-top: 3%;
+    display: inline-block;
+}
+
+#score{
+    width: 90%;
+    border: black solid;
+    display: none;
+    margin: auto;
+    font-size: 2em;
+
+}
+#temps{
+    text-align: center;
+}
+#rejouer{
+    position: relative;
+    left : 48%;
+    text-align: center;
+
 }
