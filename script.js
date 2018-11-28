@@ -9,6 +9,7 @@ var t = 0;
 var essais = 0;
 var carteid1;
 var carteid2;
+var tbl1 = [];
 
 
 var afficheCartes = function () {
@@ -44,11 +45,18 @@ for (let i = 0; i < Cartes.length; i++) {
     document.getElementById("carte" + i).addEventListener("click", function ana() {
 
 
+
+
         if (t < 2) {
-            essais++;
+            tbl1.push(i);
+            if (!tbl1[1] || tbl1[1] != tbl1[0])
+            {// bloc conditionel ici
+              //  console.log("tbl1:" tbl1+[0]);console.log(tbl)
+                essais++;
             t++;
             document.getElementById("carte" + i).src = `images/${Cartes[i]}.png`;
             if (t == 1) {
+
 
                 carteid1 = i;
                 console.log("id1" + carteid1);
@@ -59,6 +67,8 @@ for (let i = 0; i < Cartes.length; i++) {
                 console.log("id2" + carteid2);
 
             }
+
+
             console.log(DuoR);
             DuoR.push(Cartes[i]);
             console.log(DuoR);
@@ -81,7 +91,7 @@ for (let i = 0; i < Cartes.length; i++) {
 
             }
 
-
+        }//fin bloc
         }
 
         if (bonnePaire === 5) {
@@ -123,6 +133,7 @@ for (let i = 0; i < Cartes.length; i++) {
 
     document.getElementById('rejouer').addEventListener("click", function () {
         //location.reload();
+
         bonnePaire = 0;
         essais = 0;
         seconde2 = 0;

@@ -9,8 +9,8 @@ h2 {
 
 #plateau img {
     cursor: url(images/019-SMMCursor.png), pointer;
-    width: 150px;
-    height: 150px;
+    width: 20.3vh;
+    height: 20.3vh;
     margin-left: 8%;
     margin-top: 3%;
     display: inline-block;
@@ -27,9 +27,9 @@ h2 {
 #temps{
     text-align: center;
 }
-#rejouer{
+#rejouer {
     position: relative;
-    left : 48%;
+    left: 48%;
     text-align: center;
 
 }
