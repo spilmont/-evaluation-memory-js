@@ -176,7 +176,8 @@ for (let i = 0; i < Cartes.length; i++) {
     document.getElementById('rejouer').addEventListener("click", function () {
         /*location.reload();*/
 
-        // initialized of the elments
+        // initialized of the elements
+
         temps;
         bonnePaire = 0;
         essais = 0;
