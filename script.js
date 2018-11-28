@@ -49,20 +49,20 @@ for (let i = 0; i < Cartes.length; i++) {
 
         if (t < 2) {
             tbl1.push(i);
-            if (!tbl1[1] || tbl1[1] != tbl1[0])
+            if (!tbl1[1] || tbl1[1] !== tbl1[0])
             {// bloc conditionel ici
-              //  console.log("tbl1:" tbl1+[0]);console.log(tbl)
+               console.log("tbl1[1]: " +tbl1[1]);console.log("tbl1[0]: "+tbl1[0]);
                 essais++;
             t++;
             document.getElementById("carte" + i).src = `images/${Cartes[i]}.png`;
-            if (t == 1) {
+            if (t === 1) {
 
 
                 carteid1 = i;
                 console.log("id1" + carteid1);
 
             }
-            if (t == 2) {
+            if (t === 2) {
                 carteid2 = i;
                 console.log("id2" + carteid2);
 
@@ -117,7 +117,7 @@ function CaR() {
 
     seconde--;
     seconde2++;
-    if (seconde == -1) {
+    if (seconde === -1) {
 
         document.getElementById('temps').display = "none";
         document.getElementById('plateau').style.display = "none";

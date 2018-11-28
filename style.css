@@ -9,8 +9,8 @@ h2 {
 
 #plateau img {
     cursor: url(images/019-SMMCursor.png), pointer;
-    width: 20.3vh;
-    height: 20.3vh;
+    width: 20vh;
+    height: 20vh;
     margin-left: 8%;
     margin-top: 3%;
     display: inline-block;
