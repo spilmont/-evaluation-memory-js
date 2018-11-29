@@ -146,7 +146,7 @@ for (let i = 0; i < Cartes.length; i++) {
 }
 
 // function for create a countdown
-var CaR = function () {
+ function CaR () {
     //write and decrease the seconds int the div with id 'time'
     document.getElementById("temps").innerHTML = "secondes restantes:" + seconde;
     // write a lose message in the div with id 'winorlose'
