@@ -109,6 +109,7 @@ for (let i = 0; i < Cartes.length; i++) {
                             //.... put variable 't' at 0
                             t = 0;
                             // and retourned the first ans second cards clicked
+
                             document.getElementById("carte" + carteid1).src = "images/question.gif";
                             document.getElementById("carte" + carteid2).src = "images/question.gif";
                         }, 500);
@@ -197,3 +198,7 @@ document.getElementById('rejouer').addEventListener("click", function () {
 
 
 });
+
+
+export {afficheCartes}
+export {melange}
