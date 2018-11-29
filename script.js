@@ -199,6 +199,3 @@ document.getElementById('rejouer').addEventListener("click", function () {
 
 });
 
-
-export {afficheCartes}
-export {melange}
