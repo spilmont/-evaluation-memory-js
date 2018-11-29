@@ -1,11 +1,19 @@
-
+@font-face {
+    font-family: "Bros";
+    src: url(SuperMarioBros.ttf);
+}
 h1 {
+
     text-align: center;
+    font-family: Bros;
+    font-size: 4em;
+
 
 
 }
 h2 {
     text-align: center;
+    font-family: Bros;
 }
 
 #plateau img {
@@ -19,18 +27,21 @@ h2 {
 
 #score{
     width: 90%;
-    border: black solid;
     display: none;
     margin: auto;
-    font-size: 2em;
 
+}
+#score h2{
+    font-size: 2em;
 }
 #temps{
     text-align: center;
+    font-family: Bros;
 }
 #rejouer {
     position: relative;
     left: 48%;
     text-align: center;
+    font-family: Bros;
 
 }
