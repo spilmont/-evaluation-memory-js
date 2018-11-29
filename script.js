@@ -133,7 +133,7 @@ for (let i = 0; i < Cartes.length; i++) {
             // ...display aside with id 'score'
             document.getElementById("score").style.display = "block";
             //... write the diw with id 'winorlose' the win message
-            document.getElementById("winorlose").innerHTML = `<h2>vous avez Gagnez!!!<br>vous avez reussi en ${seconde2}s <br>en ${essais} essais</h2>`;
+            document.getElementById("winorlose").innerHTML = `<h2>vous avez Gagnez!!!<br>vous avez reussi en ${seconde2}s <br>en ${essais/2} essais</h2>`;
             // ...and hidden the countdown
             document.getElementById("temps").style.visibility = "hidden";
         } else {
